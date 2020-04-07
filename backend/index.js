@@ -6,14 +6,15 @@ const app = express();
 
 
 app.use(cors());
-app.use(express.json())
 app.use(routes)
+app.use(express.json())
 app.listen(3333);
 /**
  * Método HTTP:
  * 
  * GET: Buscar uma informação do back-end
  * POST: Criar uma informç$ao do back-end
+ * 
  * PUT: Alterar uma informação do back-end
  * DELETE: Deleta uma informão do back-end 
  * 
